@@ -1,0 +1,110 @@
+# 见微ToDo iOS 云端签名、IPA 构建与 App Store Connect 上传配置。
+#
+# 使用前请先在 Codemagic 后台确认以下资源存在且名称完全一致：
+#   1. Code signing identities 中的证书与描述文件 Reference name：iOS_distribution_JianWeiToDo，
+#      描述文件必须绑定 com.jianweitodo.ashu，且与上传的 Distribution 证书匹配；
+#   2. Team integrations 中名为“见微ToDo”的 App Store Connect（P8）集成；
+#   3. APP_APPLE_ID 必须是 App Store Connect 里见微ToDo 应用的 Apple ID，用于查询已有构建号。
+#
+# 本工程是纯原生 Xcode 工程，workspace 位于仓库根目录，依赖通过 CocoaPods 安装。
+
+workflows:
+  ios-app-store:
+    name: 见微ToDo iOS App Store
+    max_build_duration: 15
+    instance_type: mac_mini_m2
+
+    # 使用后台已配置的“见微ToDo”集成查询构建号并上传 IPA。
+    integrations:
+      app_store_connect: "见微ToDo"
+
+    environment:
+      # 工程使用了 iOS 26 的方向锁定 API，需要 Xcode 26 及以上；
+      # 若 latest 升级后编译不稳定，改为固定到已验证的具体版本。
+      xcode: latest
+      cocoapods: default
+
+      ios_signing:
+        # 这里填写 Codemagic 后台的 Reference name，不是证书文件名。
+        certificates:
+          - iOS_distribution_JianWeiToDo
+        provisioning_profiles:
+          - iOS_distribution_JianWeiToDo
+
+      vars:
+        # pod install 后生成的 CocoaPods 工作空间与 Xcode Scheme。
+        XCODE_WORKSPACE: "LLVod.xcworkspace"
+        XCODE_SCHEME: "LLVod"
+
+        # App Store 对外版本号。发布新版本时手动更新该值；构建号自动计算。
+        PROJECT_MARKETING_VERSION: "1.1.3"
+
+        # App Store Connect 中见微ToDo 的 Apple ID，用于查询正式与 TestFlight 最新构建号。
+        APP_APPLE_ID: 6811642154
+
+    scripts:
+      # 第一步：按 Podfile.lock 安装 CocoaPods 依赖，完整日志保留为 Artifact。
+      - name: 安装 CocoaPods 依赖
+        script: |
+          set -euo pipefail
+
+          cd "$CM_BUILD_DIR"
+          pod install --verbose 2>&1 | tee /tmp/pod-install.log
+
+      # 第二步：把后台下载的证书与描述文件写入工程，按 Bundle ID 匹配 Release 配置。
+      - name: 注入 iOS 签名描述文件
+        script: |
+          set -euo pipefail
+
+          cd "$CM_BUILD_DIR"
+          xcode-project use-profiles
+
+      # 第三步：确定唯一构建号并写入版本信息。
+      - name: 设置应用版本与构建号
+        script: |
+          set -euo pipefail
+
+          cd "$CM_BUILD_DIR"
+
+          # FORCE_PROJECT_BUILD_NUMBER 非空时优先使用人工指定值。
+          # 默认查询当前对外版本在 App Store 与 TestFlight 中的最新构建号，取最大值加 1。
+          if [ -n "${FORCE_PROJECT_BUILD_NUMBER:-}" ]; then
+            BUILD_NUMBER="$FORCE_PROJECT_BUILD_NUMBER"
+          else
+            # 查询失败时不中断，错误写入 /tmp 日志；两个查询都失败则从 0 开始并使用构建号 1。
+            # 若兜底值与 App Store Connect 已有构建号冲突，上传阶段会失败，
+            # 此时查看日志并通过 FORCE_PROJECT_BUILD_NUMBER 指定更大的构建号。
+            APP_STORE_BUILD_NUMBER="$(app-store-connect get-latest-app-store-build-number "$APP_APPLE_ID" --app-store-version="$PROJECT_MARKETING_VERSION" --platform=IOS 2>/tmp/app-store-build-number.log || true)"
+            TESTFLIGHT_BUILD_NUMBER="$(app-store-connect get-latest-testflight-build-number "$APP_APPLE_ID" --pre-release-version="$PROJECT_MARKETING_VERSION" --platform=IOS 2>/tmp/testflight-build-number.log || true)"
+            LATEST_BUILD_NUMBER="$(printf '%s\n%s\n' "$APP_STORE_BUILD_NUMBER" "$TESTFLIGHT_BUILD_NUMBER" | awk '/^[0-9]+$/ { print }' | sort -n | tail -1)"
+            BUILD_NUMBER="$(( ${LATEST_BUILD_NUMBER:-0} + 1 ))"
+          fi
+
+          echo "使用构建号：$BUILD_NUMBER"
+          xcrun agvtool new-marketing-version "$PROJECT_MARKETING_VERSION"
+          xcrun agvtool new-version -all "$BUILD_NUMBER"
+
+      # 第四步：使用 Release 配置归档并导出已签名 IPA。
+      - name: 构建已签名 IPA
+        script: |
+          set -euo pipefail
+
+          cd "$CM_BUILD_DIR"
+          xcode-project build-ipa \
+            --workspace "$XCODE_WORKSPACE" \
+            --scheme "$XCODE_SCHEME"
+
+    artifacts:
+      # 可直接下载 IPA；日志与 dSYM 保留供签名失败和崩溃符号化排查。
+      - build/ios/ipa/*.ipa
+      - /tmp/pod-install.log
+      - /tmp/app-store-build-number.log
+      - /tmp/testflight-build-number.log
+      - /tmp/xcodebuild_logs/*.log
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+
+    # 构建成功后上传 IPA 到 App Store Connect；不自动送交外部 Beta 审核。
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: false

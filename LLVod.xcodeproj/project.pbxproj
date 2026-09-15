@@ -367,6 +367,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LLVod/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "见微ToDo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = WorkspaceLaunch;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
@@ -408,11 +409,11 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = S3RJZW6489;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LLVod/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "见微ToDo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = WorkspaceLaunch;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
@@ -428,10 +429,9 @@
 					"$(inherited)",
 					"-lxml2",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.RijstLabIuyebApp.RijstLab;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jianweitodo.ashu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.RijstLabIuyebApp.RijstLab;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
