@@ -389,7 +389,7 @@ final class FeedbackCollectorViewController: UIViewController, UITextViewDelegat
 private enum FeedbackMailConfiguration {
     /// 为 true 时不发邮件，只模拟提交；正式接入时改为 false。
     static let simulatesSubmission = true
-    static let recipient = "aj.studio.9604@gmail.com"
+    static let recipient = "lseoabylg.mdheotqau153@gmx.com"
     static var subject: String { AmbientAppInfo.name + "使用反馈" }
 
     /// 诊断信息：应用版本、系统版本、设备型号与语言；页面键值行与邮件正文共用同一份数据。
