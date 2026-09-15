@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		91BF2771DF7D475168B28CCF /* Pods_LLVod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE42DAA02B1E957FBB30A8C0 /* Pods_LLVod.framework */; };
+		737B97BB099821F6D79A9E87 /* Pods_LLVod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9006233F30417AC6FBE5087 /* Pods_LLVod.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11D5F8DB101893F9B1DCA1FB /* Pods-LLVod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLVod.debug.xcconfig"; path = "Target Support Files/Pods-LLVod/Pods-LLVod.debug.xcconfig"; sourceTree = "<group>"; };
-		257E9FAC6E630EF675CC9970 /* LLVod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLVod.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE42DAA02B1E957FBB30A8C0 /* Pods_LLVod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLVod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C84E8DB8E12CDCD33932EF07 /* Pods-LLVod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLVod.release.xcconfig"; path = "Target Support Files/Pods-LLVod/Pods-LLVod.release.xcconfig"; sourceTree = "<group>"; };
+		129AD1AF6A08B0B16FFA98E1 /* Pods-LLVod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLVod.debug.xcconfig"; path = "Target Support Files/Pods-LLVod/Pods-LLVod.debug.xcconfig"; sourceTree = "<group>"; };
+		8ED7978A2F07554E0015D4AB /* LLVod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLVod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9006233F30417AC6FBE5087 /* Pods_LLVod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLVod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7D67D3608D62F5AAD55E36 /* Pods-LLVod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLVod.release.xcconfig"; path = "Target Support Files/Pods-LLVod/Pods-LLVod.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		DCB626B90FD93E692F757210 /* Exceptions for "LLVod" folder in "LLVod" target */ = {
+		8E7EDF4F2F07A2D900487003 /* Exceptions for "LLVod" folder in "LLVod" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 5CE09CBF96838D40B030EC53 /* LLVod */;
+			target = 8ED797892F07554E0015D4AB /* LLVod */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4F706F0F8093BB8D26418F9E /* LLVod */ = {
+		8ED7978C2F07554E0015D4AB /* LLVod */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				DCB626B90FD93E692F757210 /* Exceptions for "LLVod" folder in "LLVod" target */,
+				8E7EDF4F2F07A2D900487003 /* Exceptions for "LLVod" folder in "LLVod" target */,
 			);
 			path = LLVod;
 			sourceTree = "<group>";
@@ -39,48 +39,48 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		53005C2BC5252306E0DBBDFC /* Frameworks */ = {
+		8ED797872F07554E0015D4AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91BF2771DF7D475168B28CCF /* Pods_LLVod.framework in Frameworks */,
+				737B97BB099821F6D79A9E87 /* Pods_LLVod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5450977A653413A2AA5EB52F = {
+		8ED797812F07554E0015D4AB = {
 			isa = PBXGroup;
 			children = (
-				4F706F0F8093BB8D26418F9E /* LLVod */,
-				9CE859A3A3D9EF38FFD068E9 /* Products */,
-				D799290A656740AF488ABA03 /* Pods */,
-				5B2086B3476A50B4B01532F9 /* Frameworks */,
+				8ED7978C2F07554E0015D4AB /* LLVod */,
+				8ED7978B2F07554E0015D4AB /* Products */,
+				DC1987A3A7032FDCA88BF820 /* Pods */,
+				D675B5D12A62163AA3817DC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		9CE859A3A3D9EF38FFD068E9 /* Products */ = {
+		8ED7978B2F07554E0015D4AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				257E9FAC6E630EF675CC9970 /* LLVod.app */,
+				8ED7978A2F07554E0015D4AB /* LLVod.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5B2086B3476A50B4B01532F9 /* Frameworks */ = {
+		D675B5D12A62163AA3817DC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FE42DAA02B1E957FBB30A8C0 /* Pods_LLVod.framework */,
+				C9006233F30417AC6FBE5087 /* Pods_LLVod.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D799290A656740AF488ABA03 /* Pods */ = {
+		DC1987A3A7032FDCA88BF820 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				11D5F8DB101893F9B1DCA1FB /* Pods-LLVod.debug.xcconfig */,
-				C84E8DB8E12CDCD33932EF07 /* Pods-LLVod.release.xcconfig */,
+				129AD1AF6A08B0B16FFA98E1 /* Pods-LLVod.debug.xcconfig */,
+				FB7D67D3608D62F5AAD55E36 /* Pods-LLVod.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -88,65 +88,65 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5CE09CBF96838D40B030EC53 /* LLVod */ = {
+		8ED797892F07554E0015D4AB /* LLVod */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3A46A9D3F0C299BF60AC4AD /* Build configuration list for PBXNativeTarget "LLVod" */;
+			buildConfigurationList = 8ED797952F07554F0015D4AB /* Build configuration list for PBXNativeTarget "LLVod" */;
 			buildPhases = (
-				33DA6CB92FD8A783F270AF60 /* [CP] Check Pods Manifest.lock */,
-				5D688FFB393328F47B7C1378 /* Sources */,
-				53005C2BC5252306E0DBBDFC /* Frameworks */,
-				023999F0908B2F3538DEEF90 /* Resources */,
-				952898C16C709F18F6B5772D /* [CP] Embed Pods Frameworks */,
-				E4D982D581EB77494C13FDD3 /* [CP] Copy Pods Resources */,
+				F41BA21B61DE4756B77D1910 /* [CP] Check Pods Manifest.lock */,
+				8ED797862F07554E0015D4AB /* Sources */,
+				8ED797872F07554E0015D4AB /* Frameworks */,
+				8ED797882F07554E0015D4AB /* Resources */,
+				E3E190CE585A12674A1D5784 /* [CP] Embed Pods Frameworks */,
+				2C8F754A70B3B71D247A1ADC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4F706F0F8093BB8D26418F9E /* LLVod */,
+				8ED7978C2F07554E0015D4AB /* LLVod */,
 			);
 			name = LLVod;
 			productName = LLVod;
-			productReference = 257E9FAC6E630EF675CC9970 /* LLVod.app */;
+			productReference = 8ED7978A2F07554E0015D4AB /* LLVod.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F52333223ECCA7AA81F309ED /* Project object */ = {
+		8ED797822F07554E0015D4AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					5CE09CBF96838D40B030EC53 = {
+					8ED797892F07554E0015D4AB = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
-			buildConfigurationList = 83B755846125B1A28063262C /* Build configuration list for PBXProject "LLVod" */;
+			buildConfigurationList = 8ED797852F07554E0015D4AB /* Build configuration list for PBXProject "LLVod" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 5450977A653413A2AA5EB52F;
+			mainGroup = 8ED797812F07554E0015D4AB;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 9CE859A3A3D9EF38FFD068E9 /* Products */;
+			productRefGroup = 8ED7978B2F07554E0015D4AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5CE09CBF96838D40B030EC53 /* LLVod */,
+				8ED797892F07554E0015D4AB /* LLVod */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		023999F0908B2F3538DEEF90 /* Resources */ = {
+		8ED797882F07554E0015D4AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -156,7 +156,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E4D982D581EB77494C13FDD3 /* [CP] Copy Pods Resources */ = {
+		2C8F754A70B3B71D247A1ADC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -177,7 +177,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LLVod/Pods-LLVod-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		952898C16C709F18F6B5772D /* [CP] Embed Pods Frameworks */ = {
+		E3E190CE585A12674A1D5784 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -198,7 +198,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LLVod/Pods-LLVod-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		33DA6CB92FD8A783F270AF60 /* [CP] Check Pods Manifest.lock */ = {
+		F41BA21B61DE4756B77D1910 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,7 +223,7 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5D688FFB393328F47B7C1378 /* Sources */ = {
+		8ED797862F07554E0015D4AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -233,7 +233,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		E74A1B709F46400FFF644FC6 /* Debug */ = {
+		8ED797932F07554F0015D4AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -297,7 +297,7 @@
 			};
 			name = Debug;
 		};
-		7510250B365FF54FA9A2A409 /* Release */ = {
+		8ED797942F07554F0015D4AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -354,9 +354,9 @@
 			};
 			name = Release;
 		};
-		12955B92020599BD9F443026 /* Debug */ = {
+		8ED797962F07554F0015D4AB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11D5F8DB101893F9B1DCA1FB /* Pods-LLVod.debug.xcconfig */;
+			baseConfigurationReference = 129AD1AF6A08B0B16FFA98E1 /* Pods-LLVod.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -367,7 +367,6 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LLVod/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "壹影视";
 				INFOPLIST_KEY_NSCameraUsageDescription = "保存和上传孩子头像图片";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Access to the local network is required to search for nearby devices and share information. Please grant local network permissions.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "保存和上传孩子头像图片";
@@ -389,19 +388,23 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.YaQunFanApp.YaQuFang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = NO;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = LLVod/HupAVInpdhLdhppbhAzq.h;
+				SWIFT_OBJC_BRIDGING_HEADER = LLVod/Header.h;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		8AEA94B2F42C1D2EDC8FC4AA /* Release */ = {
+		8ED797972F07554F0015D4AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C84E8DB8E12CDCD33932EF07 /* Pods-LLVod.release.xcconfig */;
+			baseConfigurationReference = FB7D67D3608D62F5AAD55E36 /* Pods-LLVod.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -414,7 +417,6 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LLVod/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "壹影视";
 				INFOPLIST_KEY_NSCameraUsageDescription = "保存和上传孩子头像图片";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Access to the local network is required to search for nearby devices and share information. Please grant local network permissions.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "保存和上传孩子头像图片";
@@ -438,11 +440,15 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = com.RijstLabIuyebApp.RijstLab;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = NO;
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = LLVod/HupAVInpdhLdhppbhAzq.h;
+				SWIFT_OBJC_BRIDGING_HEADER = LLVod/Header.h;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,26 +458,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		83B755846125B1A28063262C /* Build configuration list for PBXProject "LLVod" */ = {
+		8ED797852F07554E0015D4AB /* Build configuration list for PBXProject "LLVod" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E74A1B709F46400FFF644FC6 /* Debug */,
-				7510250B365FF54FA9A2A409 /* Release */,
+				8ED797932F07554F0015D4AB /* Debug */,
+				8ED797942F07554F0015D4AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3A46A9D3F0C299BF60AC4AD /* Build configuration list for PBXNativeTarget "LLVod" */ = {
+		8ED797952F07554F0015D4AB /* Build configuration list for PBXNativeTarget "LLVod" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12955B92020599BD9F443026 /* Debug */,
-				8AEA94B2F42C1D2EDC8FC4AA /* Release */,
+				8ED797962F07554F0015D4AB /* Debug */,
+				8ED797972F07554F0015D4AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F52333223ECCA7AA81F309ED /* Project object */;
+	rootObject = 8ED797822F07554E0015D4AB /* Project object */;
 }
-
