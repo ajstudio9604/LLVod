@@ -13,11 +13,17 @@ struct LLVodApp: SwiftUI.App {
 
     var body: some Scene {
         WindowGroup {
-            AppBootstrapGate {
-                AppRootView()
+            // 环境空间作为应用首屏；原有业务在空间切换后仍由同一工厂创建。
+            WorkspaceRootView {
+                UIHostingController(
+                    rootView: AppBootstrapGate {
+                        AppRootView()
+                    }
+                    .environmentObject(ThemeManager.shared)
+                    .background(AppWindowBinder())
+                )
             }
-            .environmentObject(ThemeManager.shared)
-            .background(AppWindowBinder())
+            .ignoresSafeArea()
         }
     }
 }

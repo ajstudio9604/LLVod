@@ -1,0 +1,19 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal"
+    },
+    {
+      "filename" : "WorkspaceLaunchPhone.png",
+      "idiom" : "iphone"
+    },
+    {
+      "filename" : "WorkspaceLaunchArtwork.png",
+      "idiom" : "ipad"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
