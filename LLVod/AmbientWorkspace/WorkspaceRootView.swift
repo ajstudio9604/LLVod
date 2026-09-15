@@ -4,12 +4,9 @@ import UIKit
 
 /// 窗口仍由 SwiftUI 管理，仅替换容器中的子控制器。
 struct WorkspaceRootView: UIViewControllerRepresentable {
-    let extendedRootFactory: () -> UIViewController
-
     func makeUIViewController(context: Context) -> WorkspaceContainerViewController {
         WorkspaceSceneContext.shared.phase = context.environment.scenePhase
         let coordinator = AppWorkspaceCoordinator.shared
-        coordinator.configure(extendedRootFactory: extendedRootFactory)
         let container = WorkspaceContainerViewController()
         coordinator.attach(container)
         container.show(coordinator.makeInitialRootViewController(), animated: false)
@@ -27,7 +24,7 @@ struct WorkspaceRootView: UIViewControllerRepresentable {
     }
 }
 
-/// 场景状态独立于业务实例，专注空间显示时不创建扩展根视图。
+/// 场景状态独立于业务实例，供 UIKit 边界内的 SwiftUI 内容读取前后台状态。
 @MainActor
 private final class WorkspaceSceneContext: ObservableObject {
     static let shared = WorkspaceSceneContext()
@@ -58,8 +55,8 @@ final class WorkspaceContainerViewController: UIViewController {
     override var childForStatusBarHidden: UIViewController? { content }
     override var childForHomeIndicatorAutoHidden: UIViewController? { content }
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        // 扩展业务沿用当前工程的默认方向策略，避免依赖 aPackage 的无关实现。
-        AppWorkspaceCoordinator.shared.ambientOrientation ?? .all
+        // 方向由协调器根据播放器是否全屏统一决定。
+        AppWorkspaceCoordinator.shared.ambientOrientation
     }
 
     @available(iOS 26.0, *)

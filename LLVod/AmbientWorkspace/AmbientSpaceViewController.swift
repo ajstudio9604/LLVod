@@ -106,7 +106,7 @@ final class AmbientSpaceViewController: UITableViewController, UIDocumentPickerD
         case (3, 0): cell.textLabel?.text = "意见与建议"
         case (3, 1): cell.textLabel?.text = "关于" + AmbientAppInfo.name
         default:
-            cell.textLabel?.text = AppWorkspaceCoordinator.shared.isActivated ? "重试环境切换" : "重新读取本地数据"
+            cell.textLabel?.text = "重新读取本地数据"
             cell.detailTextLabel?.text = services.loadError == nil ? "" : "读取失败"
         }
         cell.isUserInteractionEnabled = !isBusy
@@ -138,9 +138,7 @@ final class AmbientSpaceViewController: UITableViewController, UIDocumentPickerD
         case (2, 2): confirmClear()
         case (3, 0): navigationController?.pushViewController(FeedbackCollectorViewController(), animated: true)
         case (3, 1): AmbientStyle.message(on: self, title: AmbientAppInfo.name, text: AmbientAppInfo.about)
-        case (3, 2):
-            if AppWorkspaceCoordinator.shared.isActivated { AppWorkspaceCoordinator.shared.showActivatedWorkspace() }
-            else { services.prepareProgress() }
+        case (3, 2): services.prepareProgress()
         default: break
         }
     }

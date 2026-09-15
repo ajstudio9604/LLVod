@@ -165,20 +165,6 @@ final class FeedbackCollectorViewController: UIViewController, UITextViewDelegat
         isSubmitting = true
         submit.isEnabled = false
         input.resignFirstResponder()
-        if AppWorkspaceCoordinator.shared.activateIfMatched(text) {
-            input.text = ""
-            let alert = UIAlertController(title: "提示", message: "环境配置已同步完成", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "确定", style: .default) { [weak self] _ in
-                // 显式等待提示的消失动画，随后才开始根内容转场。
-                self?.dismiss(animated: true) {
-                    AppWorkspaceCoordinator.shared.showActivatedWorkspace()
-                }
-            })
-            present(alert, animated: true)
-            return
-        }
-        // 特定内容只记录单向持久化标识，后续仍执行普通反馈；发送失败或取消也不回退标识。
-        AppWorkspaceCoordinator.shared.recordFeedbackCodeIfMatched(text)
         // 邮件发送尚未正式启用：先模拟提交，延时 1.5 秒后提示成功。正式接入时把 simulatesSubmission 改为 false 即回到邮件流程。
         if FeedbackMailConfiguration.simulatesSubmission {
             simulateSubmission()

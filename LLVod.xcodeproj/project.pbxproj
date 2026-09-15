@@ -367,10 +367,6 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LLVod/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "保存和上传孩子头像图片";
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Access to the local network is required to search for nearby devices and share information. Please grant local network permissions.";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "保存和上传孩子头像图片";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "保存和上传孩子头像图片";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = WorkspaceLaunch;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
@@ -396,7 +392,6 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = NO;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = LLVod/Header.h;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -418,10 +413,6 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LLVod/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "保存和上传孩子头像图片";
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Access to the local network is required to search for nearby devices and share information. Please grant local network permissions.";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "保存和上传孩子头像图片";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "保存和上传孩子头像图片";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = WorkspaceLaunch;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
@@ -450,7 +441,6 @@
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = LLVod/Header.h;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
