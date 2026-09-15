@@ -5,18 +5,16 @@ import Combine
 final class AppBootstrap: ObservableObject {
 
     static let shared = AppBootstrap()
-    private var channelStore = ChannelStore.shared
     private var cancellables = Set<AnyCancellable>()
-    
+
+    // 启动状态：编号门禁已移除，只保留加载中和就绪
     enum State {
-        case idle
         case loading
         case ready
-        case failed
     }
 
     @Published private(set) var state: State = .loading
-    
+
     private init() {
         setupLoading()
         NetworkMonitor.shared.$isConnected
@@ -27,33 +25,25 @@ final class AppBootstrap: ObservableObject {
                     }
                     .store(in: &cancellables)
     }
-    
+
     private func checkAppStoreAndLoadConfig() {
         guard let url = URL(string: "https://itunes.apple.com/lookup?id=594429562") else { return }
         URLSession.shared.dataTask(with: url) { data, response, error in
-          
+
         }.resume()
     }
- 
 
+
+    // 启动时直接初始化服务并进入主流程，不再校验本地编号
     func setup() {
-        let isSuccess: Bool = channelStore.validateSuccess()
-        if isSuccess {
-            setupLoadingSuccess()
-        } else {
-            state = .idle
-        }
+        setupLoadingSuccess()
     }
-    
+
     func setupLoading() {
         state = .loading
 
     }
-    
-    func setupLoadingFailed() {
-        state = .failed
-    }
-    
+
     func setupLoadingSuccess() {
         prepareServices()
         state = .ready

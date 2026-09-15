@@ -1,62 +1,60 @@
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+# macOS 生成的目录元数据和临时文件
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100/
+.Trashes/
 
-## User settings
+# Xcode 个人设置和窗口状态；保留共享方案与工作区配置
 xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
 
-## Obj-C/Swift specific
+# Xcode 构建目录、派生数据和编译中间文件
+build/
+DerivedData/
 *.hmap
+*.moved-aside
 
-## App packaging
+# 应用打包、归档、调试符号和运行结果
+*.app
 *.ipa
+*.xcarchive
 *.dSYM.zip
 *.dSYM
+*.xcresult
 
-## Playgrounds
+# Swift 交互式开发生成的时间线和工作区
 timeline.xctimeline
 playground.xcworkspace
 
-# Swift Package Manager
-#
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-# Packages/
-# Package.pins
-# Package.resolved
-# *.xcodeproj
-#
-# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
-# hence it is not needed unless you have added a package configuration file to your project
-# .swiftpm
-
+# Swift 包管理器的构建缓存；保留 Package.resolved 和共享配置
 .build/
 
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# Pods/
-#
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
+# CocoaPods 下载的依赖通过 pod install 恢复
+# 保留 Podfile、Podfile.lock、工程文件及共享工作区，便于固定依赖版本和协作
+/Pods/
 
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
+# Carthage 构建产物；保留依赖声明、锁文件和现有源码管理策略
 Carthage/Build/
 
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo.
-# Instead, use fastlane to re-generate the screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
-
+# fastlane 自动生成的报告、截图和测试输出
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+# 本地签名证书、描述文件和钥匙串
+*.p12
+*.pfx
+*.mobileprovision
+*.provisionprofile
+*.keychain
+*.keychain-db
+
+# 编辑器生成的交换文件和备份文件
+*.swp
+*.swo
+*~

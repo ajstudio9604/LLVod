@@ -10,9 +10,8 @@ struct AppBootstrapGate<Content: View>: View {
     
     var body: some View {
         Group {
+            // 编号门禁已移除：加载中显示进度，就绪后进入主内容
             switch appSetup.state {
-            case .idle, .failed:
-                AHChannelVerifyView()
             case .loading:
                 ProgressView("")
             case .ready:

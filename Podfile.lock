@@ -1,0 +1,97 @@
+PODS:
+  - AnyThinkiOS (6.5.81):
+    - AnyThinkiOS/AnyThinkSDK (= 6.5.81)
+  - AnyThinkiOS/AnyThinkSDK (6.5.81)
+  - AnyThinkMediationAdxSmartdigimktCNAdapter (6.5.77.2.0):
+    - AnyThinkiOS (>= 6.5.60)
+    - SmartdigimktCNSDK (= 6.5.77)
+  - AnyThinkMediationBaiduAdapter (10.051.2.2):
+    - AnyThinkiOS (>= 6.5.60)
+    - BaiduMobAdSDK (= 10.051)
+  - AnyThinkMediationGDTAdapter (4.15.90.2.1):
+    - AnyThinkiOS (>= 6.5.60)
+    - GDTMobSDK (= 4.15.90)
+  - BaiduMobAdSDK (10.051)
+  - CryptoSwift (1.10.0)
+  - DanmakuKit (1.6.0):
+    - DanmakuKit/Core (= 1.6.0)
+  - DanmakuKit/Core (1.6.0)
+  - GDTMobSDK (4.15.90)
+  - Kingfisher (8.12.0)
+  - KingfisherWebP (1.7.3):
+    - Kingfisher (~> 8.0)
+    - libwebp (>= 1.1.0)
+  - libwebp (1.5.0):
+    - libwebp/demux (= 1.5.0)
+    - libwebp/mux (= 1.5.0)
+    - libwebp/sharpyuv (= 1.5.0)
+    - libwebp/webp (= 1.5.0)
+  - libwebp/demux (1.5.0):
+    - libwebp/webp
+  - libwebp/mux (1.5.0):
+    - libwebp/demux
+  - libwebp/sharpyuv (1.5.0)
+  - libwebp/webp (1.5.0):
+    - libwebp/sharpyuv
+  - LookinServer (1.2.8):
+    - LookinServer/Core (= 1.2.8)
+  - LookinServer/Core (1.2.8)
+  - SmartdigimktCNSDK (6.5.77)
+  - SwiftUIPager (2.5.0)
+
+DEPENDENCIES:
+  - AnyThinkiOS (= 6.5.81)
+  - AnyThinkMediationAdxSmartdigimktCNAdapter (= 6.5.77.2.0)
+  - AnyThinkMediationBaiduAdapter (= 10.051.2.2)
+  - AnyThinkMediationGDTAdapter (= 4.15.90.2.1)
+  - CryptoSwift (from `https://github.com/krzyzanowskim/CryptoSwift.git`)
+  - DanmakuKit
+  - Kingfisher
+  - KingfisherWebP
+  - LookinServer
+  - SwiftUIPager
+
+SPEC REPOS:
+  trunk:
+    - AnyThinkiOS
+    - AnyThinkMediationAdxSmartdigimktCNAdapter
+    - AnyThinkMediationBaiduAdapter
+    - AnyThinkMediationGDTAdapter
+    - BaiduMobAdSDK
+    - DanmakuKit
+    - GDTMobSDK
+    - Kingfisher
+    - KingfisherWebP
+    - libwebp
+    - LookinServer
+    - SmartdigimktCNSDK
+    - SwiftUIPager
+
+EXTERNAL SOURCES:
+  CryptoSwift:
+    :git: https://github.com/krzyzanowskim/CryptoSwift.git
+
+CHECKOUT OPTIONS:
+  CryptoSwift:
+    :commit: c7987723fe4452dec9ad9e46ff3283d661f1ea4e
+    :git: https://github.com/krzyzanowskim/CryptoSwift.git
+
+SPEC CHECKSUMS:
+  AnyThinkiOS: b9bfb75f8e35d76b499046fca7c1927420234b96
+  AnyThinkMediationAdxSmartdigimktCNAdapter: 4c6157b42cf690aa48ec3238c62f6fcfdff527ae
+  AnyThinkMediationBaiduAdapter: 041aecfb9b8a703a17f06e1dc97668b30b87a0b1
+  AnyThinkMediationGDTAdapter: 63b4d115f0085c6953c498c2ccca30f0e3139644
+  BaiduMobAdSDK: ef7362a2b650b18dd13593bac712f4bf5f38fab0
+  CryptoSwift: e2e7776512f250e66205955da748e7a4e4abffe0
+  DanmakuKit: 5a67c78fb06a6062b6660c91d82086495e3dacca
+  GDTMobSDK: fdec348687362cf20effb182286a5d1fbd3e8467
+  Kingfisher: 64e06c7d1a9851ecff9d1b14f92ad01141263dae
+  KingfisherWebP: 064869d5f1201396ec121dcc4c9cfbdba6ecb900
+  libwebp: 02b23773aedb6ff1fd38cec7a77b81414c6842a8
+  LookinServer: 1b2b61c6402ae29fa22182d48f5cd067b4e99e80
+  SmartdigimktCNSDK: 2c8e8cf39da683f1345ec42233eb73b140b9c9d1
+  SwiftUIPager: b314d8923bef0bde743c904bb74fcc7a05fd3422
+
+PODFILE CHECKSUM: 38f42dffa2a5a7ccdb61bafc421c84ea850f157e
+
+COCOAPODS: 1.16.2
