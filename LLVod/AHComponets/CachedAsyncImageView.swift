@@ -44,9 +44,8 @@ struct CachedAsyncImageView: View {
     }
     
     private var placeholderView: some View {
-        Image("")
-            .resizable()
-            .scaledToFill()
+        // 加载中、地址为空或请求失败时使用纯色占位，避免以空名称查找图片资源。
+        Color(.secondarySystemFill)
     }
 }
 
