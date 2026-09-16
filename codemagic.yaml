@@ -11,7 +11,7 @@
 workflows:
   ios-app-store:
     name: 见微ToDo iOS App Store
-    max_build_duration: 15
+    max_build_duration: 30
     instance_type: mac_mini_m2
 
     # 使用后台已配置的“见微ToDo”集成查询构建号并上传 IPA。
