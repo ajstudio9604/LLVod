@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8ED797892F07554E0015D4AB"
-               BuildableName = "LLVod.app"
-               BlueprintName = "LLVod"
-               ReferencedContainer = "container:LLVod.xcodeproj">
+               BuildableName = "AmbientFocus.app"
+               BlueprintName = "AmbientFocus"
+               ReferencedContainer = "container:AmbientFocus.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8ED797892F07554E0015D4AB"
-            BuildableName = "LLVod.app"
-            BlueprintName = "LLVod"
-            ReferencedContainer = "container:LLVod.xcodeproj">
+            BuildableName = "AmbientFocus.app"
+            BlueprintName = "AmbientFocus"
+            ReferencedContainer = "container:AmbientFocus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8ED797892F07554E0015D4AB"
-            BuildableName = "LLVod.app"
-            BlueprintName = "LLVod"
-            ReferencedContainer = "container:LLVod.xcodeproj">
+            BuildableName = "AmbientFocus.app"
+            BlueprintName = "AmbientFocus"
+            ReferencedContainer = "container:AmbientFocus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

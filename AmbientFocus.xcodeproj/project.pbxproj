@@ -7,33 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		737B97BB099821F6D79A9E87 /* Pods_LLVod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9006233F30417AC6FBE5087 /* Pods_LLVod.framework */; };
+		0A1C09FD8A078EBAC6DCCB43 /* Pods_AmbientFocus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E7ABEE381E5E985F645953 /* Pods_AmbientFocus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		129AD1AF6A08B0B16FFA98E1 /* Pods-LLVod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLVod.debug.xcconfig"; path = "Target Support Files/Pods-LLVod/Pods-LLVod.debug.xcconfig"; sourceTree = "<group>"; };
+		29E7ABEE381E5E985F645953 /* Pods_AmbientFocus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmbientFocus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47DC4C3627E4FFAB003286D6 /* Pods-AmbientFocus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbientFocus.debug.xcconfig"; path = "Target Support Files/Pods-AmbientFocus/Pods-AmbientFocus.debug.xcconfig"; sourceTree = "<group>"; };
 		8ED7978A2F07554E0015D4AB /* AmbientFocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmbientFocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9006233F30417AC6FBE5087 /* Pods_LLVod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLVod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA60A0C181D55C2B8206A16E /* Pods-AmbientFocus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmbientFocus.release.xcconfig"; path = "Target Support Files/Pods-AmbientFocus/Pods-AmbientFocus.release.xcconfig"; sourceTree = "<group>"; };
 		FB7D67D3608D62F5AAD55E36 /* Pods-LLVod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLVod.release.xcconfig"; path = "Target Support Files/Pods-LLVod/Pods-LLVod.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		8E7EDF4F2F07A2D900487003 /* Exceptions for "LLVod" folder in "LLVod" target */ = {
+		8E7EDF4F2F07A2D900487003 /* Exceptions for "AmbientFocus" folder in "AmbientFocus" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 8ED797892F07554E0015D4AB /* LLVod */;
+			target = 8ED797892F07554E0015D4AB /* AmbientFocus */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8ED7978C2F07554E0015D4AB /* LLVod */ = {
+		8ED7978C2F07554E0015D4AB /* AmbientFocus */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				8E7EDF4F2F07A2D900487003 /* Exceptions for "LLVod" folder in "LLVod" target */,
+				8E7EDF4F2F07A2D900487003 /* Exceptions for "AmbientFocus" folder in "AmbientFocus" target */,
 			);
-			path = LLVod;
+			path = AmbientFocus;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -43,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				737B97BB099821F6D79A9E87 /* Pods_LLVod.framework in Frameworks */,
+				0A1C09FD8A078EBAC6DCCB43 /* Pods_AmbientFocus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +55,7 @@
 		8ED797812F07554E0015D4AB = {
 			isa = PBXGroup;
 			children = (
-				8ED7978C2F07554E0015D4AB /* LLVod */,
+				8ED7978C2F07554E0015D4AB /* AmbientFocus */,
 				8ED7978B2F07554E0015D4AB /* Products */,
 				DC1987A3A7032FDCA88BF820 /* Pods */,
 				D675B5D12A62163AA3817DC5 /* Frameworks */,
@@ -71,7 +73,7 @@
 		D675B5D12A62163AA3817DC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C9006233F30417AC6FBE5087 /* Pods_LLVod.framework */,
+				29E7ABEE381E5E985F645953 /* Pods_AmbientFocus.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -81,6 +83,8 @@
 			children = (
 				129AD1AF6A08B0B16FFA98E1 /* Pods-LLVod.debug.xcconfig */,
 				FB7D67D3608D62F5AAD55E36 /* Pods-LLVod.release.xcconfig */,
+				47DC4C3627E4FFAB003286D6 /* Pods-AmbientFocus.debug.xcconfig */,
+				FA60A0C181D55C2B8206A16E /* Pods-AmbientFocus.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -88,9 +92,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8ED797892F07554E0015D4AB /* LLVod */ = {
+		8ED797892F07554E0015D4AB /* AmbientFocus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8ED797952F07554F0015D4AB /* Build configuration list for PBXNativeTarget "LLVod" */;
+			buildConfigurationList = 8ED797952F07554F0015D4AB /* Build configuration list for PBXNativeTarget "AmbientFocus" */;
 			buildPhases = (
 				F41BA21B61DE4756B77D1910 /* [CP] Check Pods Manifest.lock */,
 				8ED797862F07554E0015D4AB /* Sources */,
@@ -103,10 +107,10 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8ED7978C2F07554E0015D4AB /* LLVod */,
+				8ED7978C2F07554E0015D4AB /* AmbientFocus */,
 			);
-			name = LLVod;
-			productName = LLVod;
+			name = AmbientFocus;
+			productName = AmbientFocus;
 			productReference = 8ED7978A2F07554E0015D4AB /* AmbientFocus.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -125,7 +129,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8ED797852F07554E0015D4AB /* Build configuration list for PBXProject "LLVod" */;
+			buildConfigurationList = 8ED797852F07554E0015D4AB /* Build configuration list for PBXProject "AmbientFocus" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -139,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8ED797892F07554E0015D4AB /* LLVod */,
+				8ED797892F07554E0015D4AB /* AmbientFocus */,
 			);
 		};
 /* End PBXProject section */
@@ -161,15 +165,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LLVod/Pods-LLVod-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AmbientFocus/Pods-AmbientFocus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LLVod/Pods-LLVod-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AmbientFocus/Pods-AmbientFocus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LLVod/Pods-LLVod-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmbientFocus/Pods-AmbientFocus-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F41BA21B61DE4756B77D1910 /* [CP] Check Pods Manifest.lock */ = {
@@ -187,7 +191,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LLVod-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AmbientFocus-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -330,7 +334,7 @@
 		};
 		8ED797962F07554F0015D4AB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 129AD1AF6A08B0B16FFA98E1 /* Pods-LLVod.debug.xcconfig */;
+			baseConfigurationReference = 47DC4C3627E4FFAB003286D6 /* Pods-AmbientFocus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -340,7 +344,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LLVod/Info.plist;
+				INFOPLIST_FILE = AmbientFocus/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "见微ToDo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = WorkspaceLaunch;
@@ -371,7 +375,7 @@
 		};
 		8ED797972F07554F0015D4AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB7D67D3608D62F5AAD55E36 /* Pods-LLVod.release.xcconfig */;
+			baseConfigurationReference = FA60A0C181D55C2B8206A16E /* Pods-AmbientFocus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,7 +386,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LLVod/Info.plist;
+				INFOPLIST_FILE = AmbientFocus/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "见微ToDo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = WorkspaceLaunch;
@@ -416,7 +420,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8ED797852F07554E0015D4AB /* Build configuration list for PBXProject "LLVod" */ = {
+		8ED797852F07554E0015D4AB /* Build configuration list for PBXProject "AmbientFocus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8ED797932F07554F0015D4AB /* Debug */,
@@ -425,7 +429,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8ED797952F07554F0015D4AB /* Build configuration list for PBXNativeTarget "LLVod" */ = {
+		8ED797952F07554F0015D4AB /* Build configuration list for PBXNativeTarget "AmbientFocus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8ED797962F07554F0015D4AB /* Debug */,

@@ -1,7 +1,7 @@
 # 与工程的最低部署版本保持一致，避免 CocoaPods 自动推断并告警
 platform :ios, '15.0'
 
-target 'LLVod' do
+target 'AmbientFocus' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
