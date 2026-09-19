@@ -33,8 +33,8 @@ workflows:
 
       vars:
         # pod install 后生成的 CocoaPods 工作空间与 Xcode Scheme。
-        XCODE_WORKSPACE: "LLVod.xcworkspace"
-        XCODE_SCHEME: "LLVod"
+        XCODE_WORKSPACE: "AmbientFocus.xcworkspace"
+        XCODE_SCHEME: "AmbientFocus"
 
         # App Store 对外版本号。发布新版本时手动更新该值；构建号自动计算。
         PROJECT_MARKETING_VERSION: "1.1.3"
