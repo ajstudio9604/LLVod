@@ -12,7 +12,7 @@
 
 /* Begin PBXFileReference section */
 		129AD1AF6A08B0B16FFA98E1 /* Pods-LLVod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLVod.debug.xcconfig"; path = "Target Support Files/Pods-LLVod/Pods-LLVod.debug.xcconfig"; sourceTree = "<group>"; };
-		8ED7978A2F07554E0015D4AB /* LLVod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLVod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED7978A2F07554E0015D4AB /* AmbientFocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmbientFocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9006233F30417AC6FBE5087 /* Pods_LLVod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLVod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7D67D3608D62F5AAD55E36 /* Pods-LLVod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLVod.release.xcconfig"; path = "Target Support Files/Pods-LLVod/Pods-LLVod.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +63,7 @@
 		8ED7978B2F07554E0015D4AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8ED7978A2F07554E0015D4AB /* LLVod.app */,
+				8ED7978A2F07554E0015D4AB /* AmbientFocus.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,7 +107,7 @@
 			);
 			name = LLVod;
 			productName = LLVod;
-			productReference = 8ED7978A2F07554E0015D4AB /* LLVod.app */;
+			productReference = 8ED7978A2F07554E0015D4AB /* AmbientFocus.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -354,7 +354,7 @@
 				);
 				MARKETING_VERSION = 1.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianweitodo.ashu.dev;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AmbientFocus;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -396,7 +396,7 @@
 				);
 				MARKETING_VERSION = 1.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianweitodo.ashu;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AmbientFocus;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

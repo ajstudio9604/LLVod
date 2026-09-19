@@ -5,8 +5,7 @@ target 'LLVod' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
-  # Pods for LLVod
-  # 影视业务移除后，源码不再引用任何第三方库，仅保留 Debug 下的视图调试工具
+  # 专注时钟业务为纯原生实现，已清理所有冗余的视频、弹幕及广告SDK
   pod 'LookinServer', :configurations => ['Debug']
 
 
