@@ -1,26 +1,15 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+# 与工程的最低部署版本保持一致，避免 CocoaPods 自动推断并告警
+platform :ios, '15.0'
 
 target 'LLVod' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
   # Pods for LLVod
-  pod 'SwiftUIPager'
-  pod "Kingfisher"
-  pod "KingfisherWebP"
-  pod 'DanmakuKit'
-  
-  pod 'AnyThinkiOS','6.5.81'
-  pod 'AnyThinkMediationAdxSmartdigimktCNAdapter','6.5.77.2.0'
-  pod 'AnyThinkMediationBaiduAdapter','10.051.2.2'
-  pod 'AnyThinkMediationGDTAdapter','4.15.90.2.1'
-
-  pod 'CryptoSwift', :git => 'https://github.com/krzyzanowskim/CryptoSwift.git'
-  
+  # 影视业务移除后，源码不再引用任何第三方库，仅保留 Debug 下的视图调试工具
   pod 'LookinServer', :configurations => ['Debug']
 
-  
+
   post_install do |installer|
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|

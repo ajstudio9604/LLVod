@@ -97,7 +97,6 @@
 				8ED797872F07554E0015D4AB /* Frameworks */,
 				8ED797882F07554E0015D4AB /* Resources */,
 				E3E190CE585A12674A1D5784 /* [CP] Embed Pods Frameworks */,
-				2C8F754A70B3B71D247A1ADC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,27 +155,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2C8F754A70B3B71D247A1ADC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LLVod/Pods-LLVod-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LLVod/Pods-LLVod-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LLVod/Pods-LLVod-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E3E190CE585A12674A1D5784 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,13 +163,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LLVod/Pods-LLVod-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LLVod/Pods-LLVod-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -379,10 +353,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.3;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-lxml2",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianweitodo.ashu.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -425,10 +395,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.3;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-lxml2",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jianweitodo.ashu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
